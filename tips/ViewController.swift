@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var tipControl: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -27,8 +28,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func onEditingChange(sender: AnyObject) {
-        var tipPercentages = [0.18, 0.2, 0.22]
-        var tipPercentage = tipPercentages[tipControl.selectedSegmentIndex]
+        var tipPercentage = Settings.Static.tipPercentages[tipControl.selectedSegmentIndex]
         var billAmount = (billField.text as NSString).doubleValue;
         
         var tip = billAmount * tipPercentage;
@@ -36,8 +36,6 @@ class ViewController: UIViewController {
         
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
-
-        
     }
 
     @IBAction func onTap(sender: AnyObject) {
@@ -49,8 +47,4 @@ class ViewController: UIViewController {
         var index = find(Settings.Static.tipPercentages, defaultTip)
         tipControl.selectedSegmentIndex = index!
     }
-    
-
-
 }
-
