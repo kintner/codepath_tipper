@@ -13,6 +13,8 @@
 		474DDFFA1A7D9A5D001E49BA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 474DDFF91A7D9A5D001E49BA /* Images.xcassets */; };
 		474DDFFD1A7D9A5D001E49BA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 474DDFFB1A7D9A5D001E49BA /* LaunchScreen.xib */; };
 		474DE0091A7D9A5D001E49BA /* tipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474DE0081A7D9A5D001E49BA /* tipsTests.swift */; };
+		474DE0131A7DABCA001E49BA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474DE0121A7DABCA001E49BA /* SettingsViewController.swift */; };
+		474DE0151A7DB707001E49BA /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474DE0141A7DB707001E49BA /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		474DE0021A7D9A5D001E49BA /* tipsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tipsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		474DE0071A7D9A5D001E49BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		474DE0081A7D9A5D001E49BA /* tipsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipsTests.swift; sourceTree = "<group>"; };
+		474DE0121A7DABCA001E49BA /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		474DE0141A7DB707001E49BA /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 		474DDFE41A7D9A5D001E49BA = {
 			isa = PBXGroup;
 			children = (
+				474DE0141A7DB707001E49BA /* Settings.swift */,
 				474DDFEF1A7D9A5D001E49BA /* tips */,
 				474DE0051A7D9A5D001E49BA /* tipsTests */,
 				474DDFEE1A7D9A5D001E49BA /* Products */,
@@ -83,6 +88,7 @@
 				474DDFF91A7D9A5D001E49BA /* Images.xcassets */,
 				474DDFFB1A7D9A5D001E49BA /* LaunchScreen.xib */,
 				474DDFF01A7D9A5D001E49BA /* Supporting Files */,
+				474DE0121A7DABCA001E49BA /* SettingsViewController.swift */,
 			);
 			path = tips;
 			sourceTree = "<group>";
@@ -214,6 +220,8 @@
 			files = (
 				474DDFF51A7D9A5D001E49BA /* ViewController.swift in Sources */,
 				474DDFF31A7D9A5D001E49BA /* AppDelegate.swift in Sources */,
+				474DE0151A7DB707001E49BA /* Settings.swift in Sources */,
+				474DE0131A7DABCA001E49BA /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
